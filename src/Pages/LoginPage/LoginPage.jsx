@@ -3,7 +3,7 @@ import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 
 const LoginPage = () => {
-    const { user, login } = useContext(AuthContext);
+    const { user, login, signInWithGoogle } = useContext(AuthContext);
     const navigate = useNavigate()
 
     const handleLogin = (e) => {
@@ -28,6 +28,19 @@ const LoginPage = () => {
 
                 alert(errorCode, errorMessage)
             });
+
+    }
+
+    const handleContinueWithGoogle = () => {
+        signInWithGoogle()
+            .then(result => {
+                console.log(result)
+                navigate('/');
+            })
+            .catch(error => {
+                alert(error.code + " - " + error.message);
+            });
+
 
     }
 
@@ -81,6 +94,7 @@ const LoginPage = () => {
                     </div>
 
                 </form>
+                <button onClick={handleContinueWithGoogle}>Continue with google</button>
 
                 <p className="text-center mt-4">
                     Don't have an account?{" "}

@@ -1,0 +1,102 @@
+[
+    {
+        "id": "1",
+        "title": "Player Unknowns Battle Ground: PUBG",
+        "coverPhoto": "https://c4.wallpaperflare.com/wallpaper/56/878/323/pubg-playerunknown-s-battlegrounds-4k-wallpaper-preview.jpg",
+        "category": "FPS",
+        "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+        "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory.",
+        "ratings": "4.5",
+        "developer": "Krafton"
+    },
+    {
+        "id": "2",
+        "title": "Call of Duty: Mobile",
+        "coverPhoto": "https://wallpapers.com/images/hd/4k-call-of-duty-mobile-poster-5c50tuqihdfcliuz.jpg",
+        "category": "FPS",
+        "downloadLink": "https://www.callofduty.com/mobile",
+        "description": "Classic COD multiplayer and battle royale.",
+        "ratings": "4.6",
+        "developer": "Activision"
+    },
+    {
+        "id": "3",
+        "title": "Fortnite",
+        "coverPhoto": "https://wallpapers.com/images/hd/fortnite-1920x1080-hd-cvavgntkwzkn72rg.jpg",
+        "category": "Battle Royale",
+        "downloadLink": "https://www.epicgames.com/fortnite/en-US/home",
+        "description": "Creative battle royale with building mechanics.",
+        "ratings": "4.4",
+        "developer": "Epic Games"
+    },
+    {
+        "id": "4",
+        "title": "Garena Free Fire",
+        "coverPhoto": "https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/202210/aa959aa3d8790d3a44f7f20f16adfa01.jpg",
+        "category": "Battle Royale",
+        "downloadLink": "https://ff.garena.com",
+        "description": "Fast-paced 10-minute survival battles.",
+        "ratings": "4.3",
+        "developer": "Garena"
+    },
+    {
+        "id": "5",
+        "title": "Among Us",
+        "coverPhoto": "https://wallpapers.com/images/featured/among-us-4k-lpmq1mph7e5zd1rb.jpg",
+        "category": "Casual",
+        "downloadLink": "https://www.innersloth.com/gameAmongUs.php",
+        "description": "Find the impostors in this social deduction game.",
+        "ratings": "4.2",
+        "developer": "InnerSloth"
+    },
+    {
+        "id": "6",
+        "title": "Pokemon Go",
+        "coverPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDOTWXaHgEh3TB5B4YbQ4X0w4mX4M7YwzL4Q&s",
+        "category": "AR",
+        "downloadLink": "https://pokemongolive.com",
+        "description": "Capture Pokémon in real world using GPS.",
+        "ratings": "4.1",
+        "developer": "Niantic"
+    },
+    {
+        "id": "7",
+        "title": "League of Legends: Wild Rift",
+        "coverPhoto": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/3705653167ef8f43acdc03fb2f0a469d5b3086fd-1920x1080.jpg",
+        "category": "MOBA",
+        "downloadLink": "https://wildrift.leagueoflegends.com",
+        "description": "Mobile version of League of Legends.",
+        "ratings": "4.5",
+        "developer": "Riot Games"
+    },
+    {
+        "id": "8",
+        "title": "Candy Crush Saga",
+        "coverPhoto": "https://www.hollywoodreporter.com/wp-content/uploads/2014/02/candy_crush.jpg?w=1440&h=810&crop=1",
+        "category": "Puzzle",
+        "downloadLink": "https://king.com/game/candycrush",
+        "description": "Match-3 candy puzzle challenges.",
+        "ratings": "4.1",
+        "developer": "King"
+    },
+    {
+        "id": "9",
+        "title": "Subway Surfers",
+        "coverPhoto": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/img_9060.jpeg",
+        "category": "Endless Runner",
+        "downloadLink": "https://sybo.com/games/subway-surfers",
+        "description": "Run, dodge and collect coins.",
+        "ratings": "4.3",
+        "developer": "SYBO Games"
+    },
+    {
+        "id": "10",
+        "title": "Temple Run 2",
+        "coverPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZIm8-BBObAgPfm6uTytZ4QGZlU59ZwJ8dnQ&s",
+        "category": "Endless Runner",
+        "downloadLink": "https://www.imangistudio.com/games/temple-run-2",
+        "description": "Run and escape from cursed temple!",
+        "ratings": "4.2",
+        "developer": "Imangi Studios"
+    }
+]
