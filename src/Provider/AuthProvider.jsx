@@ -26,10 +26,13 @@ const AuthProvider = ({ children }) => {
         return () => {
             unsubscribe()
         }
-    }
+    }, []
     )
 
-    const login = (email, password) => {
+    const login = async (email, password) => {
+        if (auth.currentUser) {
+            await signOut(auth);
+        }
         return signInWithEmailAndPassword(auth, email, password)
     }
 

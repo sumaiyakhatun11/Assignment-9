@@ -1,11 +1,13 @@
 import React, { useContext, } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 
 
 const RegistrationPage = () => {
-    const { setUser, createUser } = useContext(AuthContext);
+    const { setUser, createUser, signInWithGoogle } = useContext(AuthContext);
 
+
+    const navigate = useNavigate();
     const handleRegister = (e) => {
         e.preventDefault();
         console.log(e.target)
@@ -22,6 +24,7 @@ const RegistrationPage = () => {
                 const user = userCredential.user;
                 //console.log(user)
                 setUser(user)
+                navigate('/');
 
             })
             .catch((error) => {
@@ -30,6 +33,19 @@ const RegistrationPage = () => {
                 // ..
                 alert(errorCode, errorMessage)
             });
+
+    }
+
+    const handleContinueWithGoogle = () => {
+        signInWithGoogle()
+            .then(result => {
+                console.log(result)
+                navigate('/');
+            })
+            .catch(error => {
+                alert(error.code + " - " + error.message);
+            });
+
 
     }
 
@@ -105,6 +121,8 @@ const RegistrationPage = () => {
                     </div>
 
                 </form>
+
+                <button onClick={handleContinueWithGoogle}>Sign up with google</button>
 
                 <p className="text-center mt-4">
                     Already have an account?{" "}

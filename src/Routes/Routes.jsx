@@ -7,6 +7,7 @@ import Home from "../Pages/Home/Home";
 import LoginPage from "../Pages/LoginPage/LoginPage";
 import Register from "../Pages/RegistrationPage/RegistrationPage";
 import RegistrationPage from "../Pages/RegistrationPage/RegistrationPage";
+import GameDetails from "../Pages/GameDetails/GameDetails";
 
 let router = createBrowserRouter([
     {
@@ -31,7 +32,11 @@ let router = createBrowserRouter([
     {
         path: '/register',
         element: <RegistrationPage></RegistrationPage>
-    }
+    },
+    {
+        path: "/games/:id",
+        element: <GameDetails />,
+    },
 ]);
 
 
