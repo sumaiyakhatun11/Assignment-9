@@ -22,9 +22,8 @@ const Navbar = () => {
 
             <div className="flex items-center gap-8 text-black-300 font-medium">
                 <Link to="/" className="hover:text-blue-400">Home</Link>
-                <Link to="/games" className="hover:text-blue-400">Games</Link>
-                <Link to="/developers" className="hover:text-blue-400">Developers</Link>
-                <Link to="/about" className="hover:text-blue-400">About</Link>
+                <Link to="/profile" className="hover:text-blue-400">My Profile</Link>
+
 
                 {user ? (
                     <button

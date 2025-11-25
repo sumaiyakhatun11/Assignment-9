@@ -35,6 +35,7 @@ const LoginPage = () => {
         signInWithGoogle()
             .then(result => {
                 console.log(result)
+
                 navigate('/');
             })
             .catch(error => {
