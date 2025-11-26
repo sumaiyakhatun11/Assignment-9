@@ -13,7 +13,7 @@ const Navbar = () => {
         });
     }
     return (
-        <nav className="w-full bg-[#e6e4e4] text-black shadow-lg px-6 py-4 flex items-center justify-between">
+        <nav className="w-full bg-[#e6e4e4] text-black shadow-lg px-6 py-4  md:flex  items-center justify-between">
 
             <div className="text-2xl font-bold text-blue-400 tracking-wide flex items-center gap-2">
                 <img className='h-15 rounded-4xl' src={logo} alt="" />

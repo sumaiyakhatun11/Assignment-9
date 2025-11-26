@@ -29,6 +29,14 @@ const GameDetails = () => {
             });
     }, [user, loading, id, navigate]);
 
+    useEffect(() => {
+        if (game) {
+            document.title = `${game.title} | Gamehub`;
+        } else {
+            document.title = "Game Details | Gamehub";
+        }
+    }, [game]);
+
     if (loading || gamesLoading) {
         return <div className="text-white text-center mt-10 text-xl">Loading...</div>;
     }

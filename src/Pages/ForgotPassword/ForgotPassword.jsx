@@ -1,13 +1,12 @@
-import React, { } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { useParams } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
-import { getAuth, sendPasswordResetEmail } from 'firebase/auth';
-import app from '../../Firebase/firebase.config';
+import { sendPasswordResetEmail } from 'firebase/auth';
 
 const ForgotPassword = () => {
     const { email } = useParams()
-    const auth = getAuth(app)
-    const navigate = useNavigate();
+    const { auth } = useContext(AuthContext)
+
 
     const handleReset = (e) => {
         e.preventDefault();
@@ -16,7 +15,7 @@ const ForgotPassword = () => {
         sendPasswordResetEmail(auth, email)
             .then(() => {
                 alert('Password reset link has been sent')
-                navigate('/login');
+                window.open('https://mail.google.com/mail/u/0/#inbox')
 
             })
             .catch((error) => {
